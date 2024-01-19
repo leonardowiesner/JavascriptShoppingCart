@@ -1,264 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
-  <title>YardSale: Tienda online de cositas chidas</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-  <nav>
-    <img src="./icons/icon_menu.svg" alt="menu" class="menu">
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/logoletras.png" id="logo">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+                            <div id="carrito">
+                                    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
 
-    <div class="navbar-left">
-      <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
-
-      <ul>
-        <li>
-          <a href="/">All</a>
-        </li>
-        <li>
-          <a href="/">Clothes</a>
-        </li>
-        <li>
-          <a href="/">Electronics</a>
-        </li>
-        <li>
-          <a href="/">Furnitures</a>
-        </li>
-        <li>
-          <a href="/">Toys</a>
-        </li>
-        <li>
-          <a href="/">Others</a>
-        </li>
-      </ul>
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
     </div>
+    </header>
 
-    <div class="navbar-right">
-      <ul>
-        <li class="navbar-email">platzi@example.com</li>
-        <li class="navbar-shopping-cart">
-          <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
-          <div>2</div>
-        </li>
-      </ul>
-    </div>
 
-    <div class="desktop-menu inactive">
-        <ul>
-          <li>
-            <a href="/" class="title">My orders</a>
-          </li>
-    
-          <li>
-            <a href="/">My account</a>
-          </li>
-    
-          <li>
-            <a href="/">Sign out</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="mobile-menu inactive">
-        <ul>
-          <li>
-            <a href="/">CATEGORIES</a>
-          </li>
-          <li>
-            <a href="/">All</a>
-          </li>
-          <li>
-            <a href="/">Clothes</a>
-          </li>
-          <li>
-            <a href="/">Electronics</a>
-          </li>
-          <li>
-            <a href="/">Furnitures</a>
-          </li>
-          <li>
-            <a href="/">Toys</a>
-          </li>
-          <li>
-            <a href="/">Other</a>
-          </li>
-        </ul>
-    
-        <ul>
-          <li>
-            <a href="/">My orders</a>
-          </li>
-          <li>
-            <a href="/">My account</a>
-          </li>
-        </ul>
-    
-        <ul>
-          <li>
-            <a href="/" class="email">platzi@example.com</a>
-          </li>
-          <li>
-            <a href="/" class="sign-out">Sign out</a>
-          </li>
-        </ul>
-      </div>
-  </nav>
-
-  <!-- <aside class="product-detail inactive">
-    <div class="title-container">
-      <img src="./icons/flechita.svg" alt="arrow">
-      <p class="title">My order</p>
-    </div>
-
-    <div class="my-order-content">
-      <div class="shopping-cart">
-        <figure>
-          <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
-        </figure>
-        <p>Bike</p>
-        <p>$30,00</p>
-        <img src="./icons/icon_close.png" alt="close">
-      </div>
-
-      <div class="shopping-cart">
-        <figure>
-          <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
-        </figure>
-        <p>Bike</p>
-        <p>$30,00</p>
-        <img src="./icons/icon_close.png" alt="close">
-      </div>
-
-      <div class="shopping-cart">
-        <figure>
-          <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
-        </figure>
-        <p>Bike</p>
-        <p>$30,00</p>
-        <img src="./icons/icon_close.png" alt="close">
-      </div>
-
-      <div class="order">
-        <p>
-          <span>Total</span>
-        </p>
-        <p>$560.00</p>
-      </div>
-
-      <button class="primary-button">
-        Checkout
-      </button>
-    </div>
-  </div>
-  </aside>
-
-  <aside class="product-detail">
-    <div class="product-detail-close">
-      <img src="./icons/icon_close.png" alt="close">
-    </div>
-    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
-    <div class="product-info">
-      <p>$35,00</p>
-      <p>Bike</p>
-      <p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
-      <button class="primary-button add-to-cart-button">
-        <img src="./icons/bt_add_to_cart.svg" alt="add to cart">
-        Add to cart
-      </button>
-    </div>
-  </aside> -->
-  
-  <aside class="product-detail inactive product-detail-car">
-    <div class="title-container">
-      <img src="./icons/flechita.svg" alt="arrow">
-      <p class="title">My order</p>
-    </div>
-
-    <div class="my-order-content">
-      <div class="shopping-cart">
-        <figure>
-          <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
-        </figure>
-        <p>Bike</p>
-        <p>$30,00</p>
-        <img src="./icons/icon_close.png" alt="close">
-      </div>
-
-      <div class="shopping-cart">
-        <figure>
-          <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
-        </figure>
-        <p>Bike</p>
-        <p>$30,00</p>
-        <img src="./icons/icon_close.png" alt="close">
-      </div>
-
-      <div class="shopping-cart">
-        <figure>
-          <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
-        </figure>
-        <p>Bike</p>
-        <p>$30,00</p>
-        <img src="./icons/icon_close.png" alt="close">
-      </div>
-
-      <div class="order">
-        <p>
-          <span>Total</span>
-        </p>
-        <p>$560.00</p>
-      </div>
-
-      <button class="primary-button">
-        Checkout
-      </button>
-    </div>
-  </div>
-  </aside>
-
-  <aside class="product-detail inactive product-detail-menu">
-    <div class="product-detail-close">
-      <img src="./icons/icon_close.png" alt="close">
-    </div>
-    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
-    <div class="product-info-card">
-      <p>$35,00</p>
-      <p>Bike</p>
-      <p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
-      <button class="primary-button add-to-cart-button">
-        <img src="./icons/bt_add_to_cart.svg" alt="add to cart">
-        Add to cart
-      </button>
-    </div>
-  </aside>
-
-  <section class="main-container">
-    <div class="cards-container">
-
-      <!-- <div class="product-card">
-        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-        <div class="product-info">
-          <div>
-            <p>$120,00</p>
-            <p>Bike</p>
-          </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="">
-          </figure>
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero">
+                                <h2>Vamos a Rodar</h2>
+                                <p>Los mejores componentes para ir siempre contigo</p>
+                                <form action="#" id="busqueda" method="post" class="formulario">
+                                    <input class="u-full-width" type="text" placeholder="¿Que quieres comprar hoy?" id="buscador">
+                                    <input type="submit" id="submit-buscador" class="submit-buscador">
+                                </form>
+                        </div>
+                    </div>
+            </div> 
         </div>
-      </div> -->
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icono icono1">
+                        <p>20,000 Ciclistas satisfechos <br>
+                        Foro de nutrición y rendimiento</p>
+                    </div>
+                    <div class="four columns icono icono2">
+                        <p>Mejores Precios Garantizados <br>
+                        Amplia gama de posibilidades</p>
+                    </div>
+                    <div class="four columns icono icono3">
+                        <p>Envio gratuito <br>
+                        En compras superiores a 30 €</p>
+                    </div>
+            </div>
+        </div>
 
     </div>
-  </section>
 
+    <div id="lista-productos" class="container">
+        <h1 id="encabezado" class="encabezado">Productos</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/TrekEmonda.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Émonda SL 7</h4>
+                        <p>Trek</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">5.499,00 €  <span class="u-pull-right ">4.999,00 €</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/energy-gel-40g.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>BOX – 30 ENERGY GEL 40g</h4>
+                            <p>226ERS</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">88 €<span class="u-pull-right ">79 €</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/phigma.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Chaleco Hombre Blanco</h4>
+                            <p>Phigma</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">49 € <span class="u-pull-right ">30 €</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
 
-  <script src="main.js"></script>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ShortFigma.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Badana Azúl</h4>
+                        <p>Phigma</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">69 €  <span class="u-pull-right ">59 €</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/Varia.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Varia Radar Light</h4>
+                            <p>Garmin</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">160 €  <span class="u-pull-right ">135 €</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/Manillarhd.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Manillar Potencia Integrada</h4>
+                            <p>Black Inc</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">750 €<span class="u-pull-right ">708.99 €</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/SRAM.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Maneta Freno Con Cambio Red E-Tap AXS/ Izquierda</h4>
+                        <p>Sram</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">522.00 €<span class="u-pull-right ">321.99 €</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/LOOKCuadro.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Cuadro AERO Carbono</h4>
+                            <p>Look</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">5000.00 €<span class="u-pull-right ">4192.99 €</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/maurten.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Caja Barritas Energéticas Solid 225 60g Cacao 12 Unidades</h4>
+                            <p>Maurten</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">42 €<span class="u-pull-right ">39 €</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="img/shokz.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Auriculares Deportivos Inalámbricos OpenRun Mini</h4>
+                            <p>Shokz</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">166.87 €<span class="u-pull-right ">152.99 €</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/heroPRO.png" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>Cámara Acción HERO11 Black</h4>
+                                <p>GoPro</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio">399.99 €  <span class="u-pull-right ">369.99 €</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/RUBINO.png" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>Cubierta Carretera Rubino Pro IV 700C x 25</h4>
+                                <p>Vittoria</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio">46.99 €<span class="u-pull-right ">26.99 €</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+            </div> <!--.row-->
+    </div>  
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="principal" class="menu">
+                                <a class="enlace" href="#">Para tu Negocio</a>
+                                <a class="enlace" href="#">Contacta unInstructor</a>
+                                <a class="enlace" href="#">Newsletter</a>
+                                <a class="enlace" href="#">Soporte al Cliente</a>
+                                <a class="enlace" href="#">Politica privacidad</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secundaria" class="menu">
+                                <a class="enlace" href="#">¿Quienes Somos?</a>
+                                <a class="enlace" href="#">Empleo</a>
+                                <a class="enlace" href="#">Blog</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
 </body>
 </html>
